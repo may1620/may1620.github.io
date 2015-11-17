@@ -8,6 +8,8 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+	<script src="script/jquery-2.1.4.min.js"></script>
+	<script src="script/pdfChoice.js"></script>
   </head>
   <body>
     <section class="page-header">
@@ -18,24 +20,27 @@
 	  <a href="#" style="color:white" onclick="location.href='reports.html'">Reports &nbsp</a>
 	  <a href="#" style="color:white" onclick="location.href='contact.html'">Contact</a>
 	  
-    </section>
+    </section>		
 		
-		
-		<ul class="list-group" style="width:25%">
-		  <li class="list-group-item">Week 1 - <a href="weeklyReports/week1.pdf" download>Report</a></li>
-		  <li class="list-group-item">Week 2 - <a href="weeklyReports/week2.docx" download>Report</a></li>
-		  <li class="list-group-item">Week 3 - <a href="weeklyReports/week3.docx" download>Report</a></li>
-		  <li class="list-group-item">Week 4 - <a href="weeklyReports/week4.pdf" download>Report</a></li>
-		  <li class="list-group-item">Week 5 - <a href="weeklyReports/ProjectPlan.docx" download>Project Plan V1</a></li>
-		  <li class="list-group-item">Week 5 - <a href="weeklyReports/week5.docx" download>Report</a></li>
-		  <li class="list-group-item">Week 6 - <a href="weeklyReports/week6.docx" download>Report</a></li>
-		  <li class="list-group-item">Week 7 - <a href="weeklyReports/week7.docx" download>Report</a></li>
-		  <li class="list-group-item">Week 7 - <a href="weeklyReports/DesignDocument.docx" download>Design Document</a></li>
-		  <li class="list-group-item">Week 8 - <a href="weeklyReports/week8.docx" download>Report</a></li>
-		  <li class="list-group-item">Week 9 - <a href="weeklyReports/week9.docx" download>Report</a></li>
-		  <li class="list-group-item">Week 9 - <a href="weeklyReports/ProjectPlan2.docx" download>Project Plan V2</a></li>
-		  <li class="list-group-item">Week 10 - <a href="weeklyReports/week10.docx" download>Report</a></li>
-		</ul>		
-			
+		<div>	
+		<select id="pdfChoice">
+		  <option value="weeklyReports/week1.pdf">Week 1 Report</option>
+		  <option value="weeklyReports/week2.pdf">Week 2 Report</option>
+		  <option value="weeklyReports/week3.pdf">Week 3 Report</option>
+		  <option value="weeklyReports/week4.pdf">Week 4 Report</option>
+		  <option value="weeklyReports/ProjectPlan.pdf">Project Plan V1</option>
+		  <option value="weeklyReports/week5.pdf">Week 5 Report</option>
+		  <option value="weeklyReports/week6.pdf">Week 6 Report</option>
+		  <option value="weeklyReports/week7.pdf">Week 7 Report</option>
+		  <option value="weeklyReports/DesignDocument.pdf">Design Document V1</option>
+		  <option value="weeklyReports/week8.pdf">Week 8 Report</option>
+		  <option value="weeklyReports/week9.pdf">Week 9 Report</option>
+		  <option value="weeklyReports/ProjectPlan2.pdf">Project Plan V2</option>
+		  <option value="weeklyReports/week10.pdf">Week 10 Report</option>
+		  <option value="weeklyReports/week11.pdf">Week 11 Report</option>
+		</select>	
+		</div>
+			<iframe id="iframepdf" src="weeklyReports/week1.pdf" width="100%"></iframe>	
 	</body>
+
 </html>
